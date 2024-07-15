@@ -1,0 +1,15 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"-->
+<!--                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"-->
+<!--                   logicalFilePath="usersChangelog">-->
+
+<!--    <property name="now" value="sysdate" dbms="oracle"/>-->
+<!--    <property name="now" value="now()" dbms="mysql"/>-->
+<!--    <property name="now" value="now()" dbms="postgresql"/>-->
+<!--    <property name="now" value="now()" />-->
+
+<!--    <changeSet  author="mark.silverio"  id="data-role-1">-->
+<!--        <sql>INSERT INTO balances(id, amount, user_id) VALUES(1, 100000.00, 1)</sql>-->
+<!--    </changeSet>-->
+<!--</databaseChangeLog>-->

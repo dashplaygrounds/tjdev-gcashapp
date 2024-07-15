@@ -1,0 +1,21 @@
+<!--<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"-->
+<!--                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"-->
+<!--                   logicalFilePath="workspaceChangelog">-->
+
+<!--&lt;!&ndash;    <property name="datetime.type" value="datetime2" dbms="mssql"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <property name="datetime.type" value="datetime"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <property name="varchar.type" value="nvarchar" dbms="mssql"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <property name="varchar.type" value="varchar"/>&ndash;&gt;-->
+
+<!--    <changeSet id="balances-1" author="mark.silverio">-->
+<!--        <createTable tableName="BALANCES">-->
+<!--            <column name="ID" type="int" autoIncrement="true">-->
+<!--                <constraints nullable="false" primaryKey="true"/>-->
+<!--            </column>-->
+<!--            <column name="AMOUNT" type="double"/>-->
+<!--            <column name="USER_ID" type="int"/>-->
+<!--        </createTable>-->
+<!--    </changeSet>-->
+
+<!--</databaseChangeLog>-->

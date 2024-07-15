@@ -14,8 +14,8 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("/hello")
-    public String sayHello() {
-        return "Hello";
-    }
+//    @GetMapping("/hello")
+//    public String sayHello() {
+//        return "Hello";
+//    }
 }

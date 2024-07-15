@@ -14,9 +14,9 @@ public class TransactionController {
     @Autowired
     private TransactionRepository transactionRepository;
 
-    @GetMapping("/hello")
-    public String sayHello() {
-        return "Hello";
-    }
+//    @GetMapping("/hello")
+//    public String sayHello() {
+//        return "Hello";
+//    }
 
 }

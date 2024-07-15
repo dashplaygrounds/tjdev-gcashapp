@@ -12,7 +12,14 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     restart: always
-
+  dbgate:
+    container_name: dbgate
+    image: dbgate/dbgate:latest
+    restart: always
+    networks:
+      - tjnet
+    ports:
+      - '2222:3000'
 networks:
   tjnet:
     external: true
