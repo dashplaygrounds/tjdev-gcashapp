@@ -1,6 +1,7 @@
 package com.tjdev.gcashapp.controller;
 
 import com.tjdev.gcashapp.entity.Balance;
+import com.tjdev.gcashapp.exception.ResourceNotFoundException;
 import com.tjdev.gcashapp.repository.BalanceRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -35,16 +36,15 @@ public class BalanceController {
 //        return questionRepository.save(question);
 //    }
 //
-//    @PutMapping("/{questionId}")
-//    public Question updateQuestion(@PathVariable Long questionId,
-//                                   @Valid @RequestBody Question questionRequest) {
-//        return questionRepository.findById(questionId)
-//                .map(question -> {
-//                    question.setTitle(questionRequest.getTitle());
-//                    question.setDescription(questionRequest.getDescription());
-//                    return questionRepository.save(question);
-//                }).orElseThrow(() -> new ResourceNotFoundException("Question not found with id " + questionId));
-//    }
+    @PutMapping("/users")
+    public Balance updateBalance(@RequestParam Long userId,
+                                   @RequestBody Balance newBalanceRequest) {
+        return balanceRepository.findById(userId)
+                .map(balance -> {
+                    balance.setAmount(newBalanceRequest.getAmount());
+                    return balanceRepository.save(balance);
+                }).orElseThrow(() -> new ResourceNotFoundException("Question not found with id " + userId));
+    }
 //
 //
 //    @DeleteMapping("/{questionId}")

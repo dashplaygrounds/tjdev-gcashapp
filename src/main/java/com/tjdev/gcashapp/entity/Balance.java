@@ -26,4 +26,6 @@ public class Balance {
     @Column
     private Long userId;
 
+    public Balance(Double newBalance, Long userId) {
+    }
 }

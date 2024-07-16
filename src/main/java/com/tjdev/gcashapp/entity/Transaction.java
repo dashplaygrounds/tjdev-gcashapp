@@ -33,10 +33,12 @@ public class Transaction {
     private String date;
 
     @Column
-    private String transferToId;
+    private Long transferToId;
 
     @Column
-    private String transferFromId;
+    private Long transferFromId;
 
 
+    public Transaction(Double amount, String s, Long sourceId, String date, Long userId, Long sourceId1) {
+    }
 }

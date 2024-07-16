@@ -1,3 +1,3 @@
 git add .
-git commit -m "feat: initial commit"
+git commit -m "feat: added new methods"
 git push
