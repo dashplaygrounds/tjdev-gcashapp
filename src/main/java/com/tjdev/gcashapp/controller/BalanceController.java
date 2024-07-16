@@ -30,12 +30,12 @@ public class BalanceController {
     public Balance getBalanceByUserId(@PathVariable Long userId) {
         return balanceRepository.findBalanceByUserId(userId);
     }
-//
-//    @PostMapping
-//    public Question createQuestion(@Valid @RequestBody Question question) {
-//        return questionRepository.save(question);
-//    }
-//
+
+    @PostMapping("/create")
+    public Balance createBalance(@RequestBody Balance balance) {
+        return balanceRepository.save(balance);
+    }
+
     @PutMapping("/users")
     public Balance updateBalance(@RequestParam Long userId,
                                    @RequestBody Balance newBalanceRequest) {

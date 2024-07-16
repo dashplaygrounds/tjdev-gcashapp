@@ -1,5 +1,5 @@
 #!/bin/bash
 
-curl -X POST http://localhost:8080/balances \
+curl -X POST http://localhost:8080/balances/create \
    -H "Content-Type: application/json" \
-   -d '{"amount": 300000, "userId": 3}'
+   -d '{"id": 4, "amount": 500000, "userId": 4}'

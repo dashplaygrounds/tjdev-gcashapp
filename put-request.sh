@@ -1,5 +1,5 @@
 #!/bin/bash
 
-curl -X PUT http://localhost:8080/balances?users=2 \
+curl -X PUT http://localhost:8080/balances/users?userId=4 \
    -H "Content-Type: application/json" \
-   -d '{"amount": 400000, "userId": 2}'
+   -d '{"amount": 300000, "userId": 4}'
